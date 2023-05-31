@@ -64,6 +64,9 @@
                 background: rgba($color: white, $alpha: .7);
                 color: #dc1819;
                 text-align: center;
+                @media screen and (max-width:766px) {
+                    font-size: .85rem;
+                }
             }
             .img {
                 position: absolute;
