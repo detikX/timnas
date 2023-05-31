@@ -95,9 +95,20 @@
     }
 }
 
+
+@keyframes MoveUpDown1{
+    0%, 100% {
+        top: 10px;
+    }
+    50% {
+        top: 25px;
+    }
+}
 .sticky-img {
     position: sticky;
     top: 24px;
+    // left: 0;
+    // animation: MoveUpDown1 1.5s linear infinite;
 }
 
 .bg-help-teks {
