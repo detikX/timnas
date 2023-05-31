@@ -29,10 +29,13 @@
         .side-play {
             display: inline-block;
             width: 43%;
+            background-position: bottom;
             height: 200px;
+            background-size: contain;
+            background-image: url(../img/bg.png);
             vertical-align: middle;
             border-radius: 16px;
-            border: 2px solid #ffffff;
+            border: 2px solid #fff;
             position: relative;
             .position {
                 position: absolute;
