@@ -22,7 +22,7 @@ body {
 body,
 main {
     // font-family: 'Aeonik Regular', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Kanit', sans-serif;
     // font-family: 'Nunito Sans', sans-serif;
     // @media screen and (max-width: 766px) {
     //     overflow-x: hidden;
@@ -161,9 +161,10 @@ section {
     z-index: 8;
     p,
     div {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-weight: 300;
         @media screen and (max-width: 766px) {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
 }
@@ -279,40 +280,16 @@ section {
 .title__cek {
     // background: linear-gradient(to right, #043262, $darkblue);
     width: fit-content;
-    color: $mandiri;
+    color: $white;
     padding: 8px 8px;
-    border-bottom: 4px solid;
     margin: 0 auto;
     text-align: center;
-    position: relative;
-    border-radius: 16px;
-    overflow-x: hidden;
-    background: white;
-    .batik2 {
-        position: absolute;
-        left: -144px;
-        bottom: 0;
-        width: 100px;
-        opacity: .3;
-        height: auto;
-        z-index: 2;
-        width: 320px;
-        @media screen and (max-width: 766px) {
-            width: 100px;
-            left: -44px;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+    position: relative; 
+    h3 {
+        font-size: 3.2rem;
+        @media screen and (max-width:766px) {
+            font-size: 2.2rem;
         }
     }
-    h2 {
-        margin-bottom: 0;
-        font-size: 3.3rem;
-        font-family: 'Montserrat' !important;
-        @media screen and (max-width: 766px) {
-            font-size: 1.8rem;
-        }
-    }
+   
 }
