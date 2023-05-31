@@ -97,5 +97,9 @@
 
 .sticky-img {
     position: sticky;
-    top: 0;
+    top: 24px;
+}
+
+.bg-help-teks {
+    background: rgba($color: $red, $alpha: .5);
 }
