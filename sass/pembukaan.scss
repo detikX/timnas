@@ -2,6 +2,21 @@
     @media screen and (max-width:766px) {
         // padding: 32px 0 100px;
     }
+
+    .bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        display: none;
+        opacity: .3;
+        height: 100%;
+        filter: grayscale(100%);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 
