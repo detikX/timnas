@@ -9,11 +9,12 @@
         position: relative;
         width: fit-content;
         margin: 0 auto;
+        z-index: 4;
         &::before {
             content: "";
             position: absolute;
             top: 16px;
-            bottom: -8px;
+            bottom: 0;
             z-index: -1;
             right: -8px;
             width: 100%;
