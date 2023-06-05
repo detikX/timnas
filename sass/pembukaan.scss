@@ -1,4 +1,5 @@
 .pembukaan {
+    padding: 52px 0;
     @media screen and (max-width:766px) {
         // padding: 32px 0 100px;
     }
@@ -7,10 +8,16 @@
         position: absolute;
         inset: 0;
         width: 100%;
-        display: none;
+        // display: none;
         opacity: .3;
         height: 100%;
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, $red, rgba($red,.9), $red);
+        }
         img {
             width: 100%;
             height: 100%;
