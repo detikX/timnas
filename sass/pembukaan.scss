@@ -1,9 +1,8 @@
 .pembukaan {
     padding: 52px 0;
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         // padding: 32px 0 100px;
     }
-
     .bgs {
         position: absolute;
         inset: 0;
@@ -16,7 +15,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $red,transparent);
+            background: linear-gradient(to top, $red, transparent);
         }
         img {
             width: 100%;
@@ -24,7 +23,6 @@
             object-fit: contain;
         }
     }
-
     .bg {
         position: absolute;
         inset: 0;
@@ -37,7 +35,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $red, rgba($red,.9), $red);
+            background: linear-gradient(to top, $red, rgba($red, .7), $red);
         }
         img {
             width: 100%;
@@ -47,18 +45,17 @@
     }
 }
 
-
-
-
 @keyframes MoveUpDown {
-    0%, 100% {
+    0%,
+    100% {
         left: 0;
     }
     50% {
         left: 25px;
     }
 }
-.gambar{
+
+.gambar {
     &_bottom {
         animation: MoveUpDown 3s linear infinite;
         position: absolute;
