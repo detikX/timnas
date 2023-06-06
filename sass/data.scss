@@ -197,6 +197,9 @@
         opacity: .3;
         height: 100%;
         // filter: grayscale(100%);
+        &.o6 {
+            opacity: .6 !important;
+        }
         &::before {
             content: '';
             position: absolute;
