@@ -14,8 +14,15 @@
         &::before {
             content: '';
             position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, $red, transparent);
+            // inset: 0;
+            height: 50vh;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, $red 20%, transparent);
+            @media screen and (max-width: 766px) {
+                background: linear-gradient(to top, $red, transparent);
+            }
         }
         img {
             width: 100%;
