@@ -8,6 +8,9 @@
         box-shadow: 10px 10px #b9b1b2;
         // height: 240px !important;
         height: 75% !important;
+        @media screen and (max-width: 766px) {
+            box-shadow: 5px 5px #b9b1b2;
+        }
         img {
             border-radius: 12px;
         }
