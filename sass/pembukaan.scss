@@ -21,7 +21,7 @@
             bottom: 0;
             background: linear-gradient(to top, $red 20%, transparent);
             @media screen and (max-width: 766px) {
-                background: linear-gradient(to top, $red, transparent);
+                background: linear-gradient(to top, $red 5%, transparent);
             }
         }
         img {
