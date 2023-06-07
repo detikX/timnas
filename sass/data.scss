@@ -2,6 +2,15 @@
     // background: #dc1819;
     // padding: 0;
     // overflow-x: hidden;
+    .pelatih {
+        border: 5px solid black;
+        border-radius: 16px;
+        box-shadow: 10px 10px #b92531;
+        height: 240px !important;
+        img {
+            border-radius: 12px;
+        }
+    }
     .no-rotate {
         transform: initial !important;
     }
