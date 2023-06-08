@@ -24,7 +24,14 @@
             bottom: 0;
             background: linear-gradient(to top, $red 20%, transparent);
             @media screen and (max-width: 766px) {
-                background: linear-gradient(to top, $red 5%, transparent);
+                content: '';
+                position: absolute;
+                height: 15vh;
+                left: 0;
+                right: 0;
+                bottom: -8px;
+                transform: skew(2deg, 2deg);
+                background: linear-gradient(to top, #87232b 30%, transparent);
             }
         }
         img {
