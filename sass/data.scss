@@ -61,6 +61,9 @@
             font-size: 1.3rem !important;
             color: $red !important;
             margin-bottom: 0 !important;
+            @media screen and (max-width:766px) {
+                font-size: 1.2rem !important;
+            }
         }
     }
     .pelatih {
