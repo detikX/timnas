@@ -19,13 +19,19 @@
         width: fit-content;
     }
     .imgd {
-        // position: absolute;
+        position: absolute;
         // right: -10vw;
         // top: -4vh;
-        width: 100%;
-        height: auto;
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(to top, #ccc, white);
+        border-radius: 50%;
+        padding: 16px;
+        top: -25px;
+        left: -25px;
         @media screen and (max-width:766px) {
-            width: 100%;
+            width: 120px;
+            height: 120px;
         }
         img {
             width: 100%;
@@ -34,13 +40,16 @@
         }
     }
     &-merah {
-        background: rgba(white,.8);
+        background: rgba(white,1);
         width: fit-content;
         padding: 8px;
         color:$red;
         position: relative;
         border-radius: 16px;
-        margin: 8px;
+        margin: 24px 8px;
+        .hm {
+            margin-left: 100px;
+        }
         p {
             margin-bottom: 0;
         }
@@ -158,6 +167,17 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        &.haha {
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to top, $red, rgba($red, .9), $red);
+                @media screen and (max-width:766px) {
+                    background: linear-gradient(to top, $red, rgba($red, .8), $red);
+                }
+            }    
         }
         &::before {
             content: "";
