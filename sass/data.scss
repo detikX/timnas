@@ -2,6 +2,57 @@
     // background: #dc1819;
     // padding: 0;
     // overflow-x: hidden;
+    &-garis {
+        border: 1px solid;
+        width: fit-content;
+        padding: 8px;
+        margin: 8px;
+        h4 {
+            color: white !important;
+            font-size: 1.3rem !important;
+        }
+        ul {
+            padding: 0 24px;
+        }
+    }
+    .fit {
+        width: fit-content;
+    }
+    .imgd {
+        // position: absolute;
+        // right: -10vw;
+        // top: -4vh;
+        width: 100%;
+        height: auto;
+        @media screen and (max-width:766px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-merah {
+        background: rgba(white,.8);
+        width: fit-content;
+        padding: 8px;
+        color:$red;
+        position: relative;
+        margin: 8px;
+        p {
+            margin-bottom: 0;
+        }
+        .boldx {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 1.3rem !important;
+            color: $red !important;
+            margin-bottom: 0 !important;
+        }
+    }
     .pelatih {
         border: 5px solid black;
         border-radius: 16px;
