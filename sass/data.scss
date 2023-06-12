@@ -2,6 +2,90 @@
     // background: #dc1819;
     // padding: 0;
     // overflow-x: hidden;
+    .imgs {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, $red, rgba($red, .3), $red);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .prediksi {
+        position: relative;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
+        z-index: 7;
+        background: black;
+        .vs {
+            position: relative;
+            top: 50px;
+            font-weight: 200;
+        }
+        .skor {
+            position: absolute;
+            top: 40%;
+            width: 100vw;
+            height: 60%;
+            // border: 1px solid;
+            // left: 0%;
+            // height: fit-content;
+            // background: rgba(black, .6);
+            text-align: center;
+            margin: 0 auto;
+            padding: 32px 0;
+            .imgg {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(to top, black, rgba(black, .7), black);
+                }
+                // opacity: .2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .lines {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .boxs {
+                width: 240px;
+                height: 240px;
+                background: rgba(white, .7);
+                margin: 16px auto;
+                @media screen and (max-width: 766px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
     &-garis {
         border: 1px solid;
         width: fit-content;
@@ -29,7 +113,7 @@
         padding: 16px;
         top: -25px;
         left: -25px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 120px;
             height: 120px;
         }
@@ -40,10 +124,10 @@
         }
     }
     &-merah {
-        background: rgba(white,1);
+        background: rgba(white, 1);
         width: fit-content;
         padding: 8px;
-        color:$red;
+        color: $red;
         position: relative;
         border-radius: 16px;
         margin: 24px 8px;
@@ -61,7 +145,7 @@
             font-size: 1.3rem !important;
             color: $red !important;
             margin-bottom: 0 !important;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 font-size: 1.2rem !important;
             }
         }
@@ -177,10 +261,10 @@
                 position: absolute;
                 inset: 0;
                 background: linear-gradient(to top, $red, rgba($red, .9), $red);
-                @media screen and (max-width:766px) {
+                @media screen and (max-width: 766px) {
                     background: linear-gradient(to top, $red, rgba($red, .8), $red);
                 }
-            }    
+            }
         }
         &::before {
             content: "";
