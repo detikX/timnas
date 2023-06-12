@@ -3,6 +3,29 @@
     @media screen and (max-width: 766px) {
         // padding: 32px 0 100px;
     }
+    .imgg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        // top: initial;
+        z-index: 4;
+        bottom: -5px;
+        @media screen and (max-width: 766px) {
+            // top: -160px;
+            // bottom: initial;
+        }
+        @media screen and (max-width: 375px) {
+            // top: -150px;
+            // bottom: initial;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .bgs {
         position: absolute;
         inset: 0;
@@ -14,30 +37,30 @@
         @media screen and (max-width: 766px) {
             // height: 80%;
         }
-        &::before {
-            content: '';
-            position: absolute;
-            // inset: 0;
-            height: 10vh;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to top, $red 20%, transparent);
-            @media screen and (max-width: 766px) {
-                content: '';
-                position: absolute;
-                height: 10vh;
-                left: 0;
-                right: 0;
-                bottom: 0px;
-                // transform: skew(2deg, 2deg);
-                background: linear-gradient(to top, #87232b 30%, transparent);
-            }
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     // inset: 0;
+        //     height: 10vh;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     background: linear-gradient(to top, $red 20%, transparent);
+        //     @media screen and (max-width: 766px) {
+        //         content: '';
+        //         position: absolute;
+        //         height: 10vh;
+        //         left: 0;
+        //         right: 0;
+        //         bottom: 0px;
+        //         // transform: skew(2deg, 2deg);
+        //         background: linear-gradient(to top, #87232b 30%, transparent);
+        //     }
+        // }
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
     .bg {
