@@ -161,10 +161,10 @@ section {
     z-index: 8;
     p,
     div {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 300;
         @media screen and (max-width: 766px) {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 }
@@ -284,12 +284,11 @@ section {
     padding: 8px 8px;
     margin: 0 auto;
     text-align: center;
-    position: relative; 
+    position: relative;
     h3 {
         font-size: 3.2rem;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             font-size: 2.2rem;
         }
     }
-   
 }
