@@ -203,6 +203,24 @@
         // height: 75vh !important;
         position: sticky;
         top: 60px;
+        h4 {
+            font-size: 1rem;
+            color: white;
+            // background: black;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -4px;
+                right: -4px;
+                left: 4px;
+                bottom: 4px;
+                width: 100%;
+                z-index: -1;
+                height: 100%;
+                background: black;
+            }
+        }
         @media screen and (max-width: 766px) {
             box-shadow: 5px 5px #b9b1b2;
             // height: 75% !important;
@@ -505,6 +523,9 @@
 .allm {
     .bold {
         font-weight: 600;
+    }
+    ul {
+        padding: 4px 20px;
     }
 }
 
