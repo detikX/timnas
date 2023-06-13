@@ -519,11 +519,27 @@
     // overflow: hidden;
     .imgk {
         width: 100%;
+        overflow-x: hidden;
         height: 320px;
         border-radius: 16px;
         border: 6px solid white;
         position: relative;
         z-index: 8;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            // top: 0;
+            right: 16px;
+            // height: 4vh;
+            width: 100vw;
+            height: 10vh;
+            // background: red;
+            background: linear-gradient(to top, black, transparent);
+            z-index: 1;
+            border-radius: 0 0 16px 16px;
+        }
         img,
         iframe {
             border-radius: 16px;
@@ -541,20 +557,20 @@
             .totop {
                 font-size: 1.2rem;
             }
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                top: 0;
-                right: 0;
-                // height: 4vh;
-                width: 89vw;
-                // background: red;
-                background: linear-gradient(to top, black, transparent);
-                z-index: 1;
-                border-radius: 0 0 16px 16px;
-            }
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     bottom: 0px;
+            //     left: 0px;
+            //     top: 0;
+            //     right: 0;
+            //     // height: 4vh;
+            //     width: 89vw;
+            //     // background: red;
+            //     background: linear-gradient(to top, black, transparent);
+            //     z-index: 1;
+            //     border-radius: 0 0 16px 16px;
+            // }
         }
     }
 }
