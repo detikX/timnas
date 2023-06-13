@@ -448,9 +448,21 @@
 
 .sticky-img {
     position: sticky;
+    // background-image: url('../img/out.png');
     top: 24px;
-    // left: 0;
-    // animation: MoveUpDown1 1.5s linear infinite;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+    @media screen and (max-width: 766px) {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .bg-help-teks {
