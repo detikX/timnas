@@ -4,6 +4,9 @@
     // overflow-x: hidden;
     // padding: 32px 0 0;
     overflow-x: clip;
+    &.no-padd {
+        padding: 32px 0 0;
+    }
     .imggs {
         position: absolute;
         left: 0;
@@ -123,9 +126,10 @@
                 height: 240px;
                 background: rgba(white, .7);
                 margin: 16px auto;
-                font-size: 3rem;
+                font-size: 10rem;
                 @media screen and (max-width: 766px) {
                     width: 80px;
+                    font-size: 3rem;
                     height: 80px;
                 }
             }
