@@ -385,6 +385,53 @@
             border-radius: 16px;
             border: 2px solid #fff;
             position: relative;
+            i {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+            }
+            .data-detail {
+                background: rgba($color: #000000, $alpha: .9);
+                position: absolute;
+                inset: 0;
+                display: none;
+                padding: 8px 0;
+                z-index: 9;
+                border-radius: 16px;
+                text-align: center;
+                .tutups {
+                    position: absolute;
+                    bottom: 0;
+                    background: #87232b;
+                    color: #fff;
+                    padding: 2px 8px;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 4px;
+                }
+                h4 {
+                    font-size: 1rem;
+                    color: white;
+                    margin: 0 auto 8px;
+                    position: relative;
+                    width: fit-content;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -4px;
+                        left: 50%;
+                        right: 0;
+                        width: 40px;
+                        transform: translate(-50%,-50%);
+                        height: 1px;
+                        background: white;
+                    }
+                    // border-bottom: 1px solid white;
+                }
+                div,p {
+                    font-size: .85rem;
+                }
+            }
             .position {
                 position: absolute;
                 left: 0;
