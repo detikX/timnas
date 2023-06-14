@@ -526,17 +526,29 @@
 @keyframes MoveUpDown1 {
     0%,
     100% {
-        top: 10px;
+        top: 60px;
     }
     50% {
-        top: 25px;
+        top: 65px;
     }
 }
-
+.negara {
+    width: 80px;
+    height: 40px;
+    // border-radius: 50%;
+    background: red;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 .sticky-img {
     position: sticky;
     // background-image: url('../img/out.png');
-    top: 24px;
+    top: 60px;
+    animation: MoveUpDown 1s linear infinite;
     left: 0;
     right: 0;
     bottom: 0;
