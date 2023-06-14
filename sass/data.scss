@@ -134,12 +134,12 @@
                 top: initial;
                 bottom: 90%;
                 @media screen and (max-width: 766px) {
-                    top: -155px;
+                    top: -145px;
                     display: block;
                     bottom: initial;
                 }
                 @media screen and (max-width: 375px) {
-                    top: -150px;
+                    top: -145px;
                     bottom: initial;
                 }
                 img {
@@ -149,11 +149,11 @@
                 }
             }
             .boxs {
-                width: 240px;
-                height: 240px;
+                width: 120px;
+                height: 120px;
                 background: rgba(white, .7);
                 margin: 16px auto;
-                font-size: 10rem;
+                font-size: 5rem;
                 @media screen and (max-width: 766px) {
                     width: 80px;
                     font-size: 3rem;
