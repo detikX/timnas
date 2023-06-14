@@ -401,6 +401,8 @@
                 text-align: center;
                 .tutups {
                     position: absolute;
+                    cursor: pointer;
+                    z-index: 12;
                     bottom: 0;
                     background: #87232b;
                     color: #fff;
