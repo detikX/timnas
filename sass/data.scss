@@ -63,7 +63,6 @@
             height: 60%;
             position: absolute;
             /* inset: 0; */
-
             /* width: 100%; */
             height: 100%;
             /* object-fit: contain; */
@@ -72,11 +71,11 @@
             bottom: 100px;
             img {
                 width: 100%;
-            height: 100%;
-            object-fit: contain;
-            @media screen and (max-width:766px) {
-                object-fit: cover;
-            }
+                height: 100%;
+                object-fit: contain;
+                @media screen and (max-width: 766px) {
+                    object-fit: cover;
+                }
             }
             object-fit: cover;
             @media screen and (max-width:766px) {
@@ -419,10 +418,9 @@
                 //     right: 4px;
                 // }
                 // opacity: .8;
-                background: rgba($color: #000000, $alpha:.6);
+                // background: rgba($color: #000000, $alpha:.6);
                 // background: rgba($color: $red, $alpha: .8)
             }
-
             i {
                 position: absolute;
                 top: 8px;
@@ -446,7 +444,7 @@
                     color: #fff;
                     padding: 2px 8px;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     border-radius: 4px;
                 }
                 h4 {
@@ -462,13 +460,14 @@
                         left: 50%;
                         right: 0;
                         width: 40px;
-                        transform: translate(-50%,-50%);
+                        transform: translate(-50%, -50%);
                         height: 1px;
                         background: white;
                     }
                     // border-bottom: 1px solid white;
                 }
-                div,p {
+                div,
+                p {
                     font-size: .85rem;
                 }
             }
@@ -559,6 +558,7 @@
         top: 65px;
     }
 }
+
 .negara {
     width: 80px;
     height: 40px;
@@ -571,6 +571,7 @@
         object-fit: cover;
     }
 }
+
 .sticky-img {
     position: sticky;
     // background-image: url('../img/out.png');
