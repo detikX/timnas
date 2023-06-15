@@ -706,3 +706,26 @@
     margin: 8px 0 0;
     color: #d3ae58;
 }
+
+.vipo {
+    .kelas {
+        color: #cecece;
+        @media screen and (max-width: 766px) {
+            font-size: .9rem;
+        }
+    }
+    h4 {
+        color: white;
+        font-size: 2.5rem;
+        @media screen and (max-width: 766px) {
+            font-size: 1.2rem;
+        }
+    }
+    .mt-3 {
+        padding: 16px;
+        background: rgba($color: white, $alpha: .2);
+        @media screen and (max-width: 766px) {
+            padding: 8px 4px;
+        }
+    }
+}
