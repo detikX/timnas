@@ -723,6 +723,7 @@
     }
     .mt-3 {
         padding: 16px;
+        box-shadow: 2px 3px 2px #bbb;
         background: rgba($color: white, $alpha: .2);
         @media screen and (max-width: 766px) {
             padding: 8px 4px;
