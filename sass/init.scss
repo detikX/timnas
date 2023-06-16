@@ -120,7 +120,7 @@ main {
 }
 
 #nav {
-    background: rgba(0, 120, 130, 0.5) !important;
+    background: rgba($red, 0.5) !important;
     z-index: 99 !important;
     backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
@@ -129,19 +129,21 @@ main {
 }
 
 .share_icon>a {
-    padding: 0;
+    padding: 0 !important;
 }
 
 #share {
-    z-index: 108;
+    z-index: 108 !important;
 }
 
 .share_icon>a i {
-    font-size: 25px;
-    line-height: initial;
+    font-size: 25px !important;
+    line-height: initial !important;
     @media screen and (max-width: 766px) {
         font-size: 16px !important;
-        line-height: initial;
+        line-height: initial !important;
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
@@ -287,6 +289,7 @@ section {
     position: relative;
     h3 {
         font-size: 3.2rem;
+        font-family: 'Kanit' !important;
         @media screen and (max-width: 766px) {
             font-size: 2.2rem;
         }
